@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Camera Preview App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <div id="cameraPreview" style="width: 100%; height: 100%;"></div>
+ 
+  <div>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="startRecording()">
+      <!-- <ion-icon name="videocam"></ion-icon> -->
+    </ion-fab-button>
+    <ion-fab-button (click)="stopRecording()" color="danger">
+      <ion-icon name="square"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</div>
+</ion-content>

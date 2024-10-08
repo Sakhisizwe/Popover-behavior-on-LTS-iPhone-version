@@ -1,0 +1,7 @@
+{
+  "name": "recordingApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
