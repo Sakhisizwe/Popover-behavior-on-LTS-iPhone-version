@@ -1,22 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Camera Preview App
+      TESTING SELECT CATEGORY ON iOS
     </ion-title>
   </ion-toolbar>
 </ion-header>
  
 <ion-content>
-  <div id="cameraPreview" style="width: 100%; height: 100%;"></div>
- 
-  <div>
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="startRecording()">
-      <!-- <ion-icon name="videocam"></ion-icon> -->
-    </ion-fab-button>
-    <ion-fab-button (click)="stopRecording()" color="danger">
-      <ion-icon name="square"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-</div>
+
+  <ion-item lines="none" mode="md">
+    <ion-label position="stacked">Select Endorsement Status</ion-label>
+    <ion-select class="input-select-field"
+                [interface]="isIos ? 'popover' : 'alert'"
+                placeholder="Are you endorsing someone?"
+                formControlName="endorserStatus"
+                >
+        <ion-select-option value="Receiving">Receiving endorsement</ion-select-option>
+        <ion-select-option value="Giving">Giving Endorsement</ion-select-option>
+    </ion-select>
+</ion-item>
 </ion-content>
